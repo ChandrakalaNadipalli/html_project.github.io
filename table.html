@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th rowspan="2">header1</th>
+            <th colspan="2">header2</th>
+            <th rowspan="2">header3</th>
+        </tr>
+        <tr>
+            <th>subheader1</th>
+            <th>subheader2</th>
+        </tr>
+        <tr>
+            <td>row1,cell1</td>
+            <td>row1,cell2</td>
+            <td>row1,cell3</td>
+            <td>row1,cell4</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+            <td>row2,cell3</td>
+            <td>row2,cell4</td>
+        </tr>
+        <tr>
+            <td>row3,cell1</td>
+            <td>row3,cell2</td>
+            <td>row3,cell3</td>
+            <td>row3,cell4</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1px">
+        <tr>
+            <th rowspan="3">header1</th>
+            <th colspan="2">header2</th>
+            <th rowspan="3">header3</th>
+        </tr>
+        <tr>
+            <th>subheader1</th>
+            <th rowspan="2">subheader2</th>
+        </tr>
+        <tr>
+            <th>subsubheader1</th>
+        </tr>
+        <tr>
+            <td>row1,cell1</td>
+            <td rowspan="2">row1,cell2</td>
+            <td>row1,cell3</td>
+            <td>row1,cell4</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell3</td>
+            <td rowspan="2">row2,cell4</td>
+        </tr>
+        <tr>
+            <td>row3,cell1</td>
+            <td>row3,cell2</td>
+            <td>row3,cell3</td>
+        </tr>
+    </table>
+    <br>
+    <a href="https://www.swiggy.com/" target="_blank">swiggy</a>
+    <a href="table1.html" target="_blank">location</a>
+    <a href="course.html" target="_blank">courses offered</a>
+    <a href="contact.html" target="_blank">contact details</a><br><br>
+<!--target is used to redirect the page to another page-->
+<!-- embed map in html-->
+<br>
+
+<form action="course.html" method="get"><!--sending ur msg 2 DB(method)-->
+    <div>
+    <!-- <label for="user">user name</label> -->
+    <input type="text" id="user" placeholder="username" maxlength="20" minlength="2">
+</div>
+    <div>
+    <!-- <label for="pwd">password</label> -->
+    <input type="password" id="pwd" required placeholder="password">
+</div>
+    <div>
+    <!-- <label for="mobno">mobile no</label> -->
+    <input type="number" id="mobno" placeholder="mobile no" min="10" max="20">
+</div>
+    <div>
+    <!-- <label for="mail">email</label> -->
+    <input type="text" id="mail" placeholder="email">
+</div>
+    <div>
+    <label for="num">DOB</label>
+    <input type="date" id="num">
+</div>
+    <div>
+    <label for="male">male</label><input type="radio" id="male">
+    <label for="fem">female</label><input type="radio" id="fem">
+</div>
+    <div>
+     <label for="frtend">frontend</label><input type="checkbox" id="frtend">
+    <label for="bkend">backend</label><input type="checkbox" id="bkend">
+    <label for="opc">optional courses</label><input type="checkbox" id="opc">
+</div> 
+<div>
+    <select>
+        <option></option>
+        <option>morning</option>
+        <option>evening</option>
+        <option>afternoon</option>
+    </select>
+</div>
+<div>
+    <label>upload resume</label><input type="file">
+</div>
+<div>
+    <label>feedback</label><textarea cols="30" rows="10"></textarea>
+</div>
+<input type="text" value="mca" required><!-- fixed value given to i/p,cannot be changed-->
+<div>
+    <button type="submit">submit</button>
+    <button type="reset">reset</button>
+</div>
+
+</form>
+</body>
+</html>
+

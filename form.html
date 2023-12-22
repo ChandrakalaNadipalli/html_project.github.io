@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORMS</h1>
+    <form action="home.html" method="get"><!--sending ur msg 2 DB(method)-->
+        <div>
+        <!-- <label for="user">user name</label> -->
+        <input type="text" id="user" placeholder="username" maxlength="20" minlength="2">
+    </div>
+        <div>
+        <!-- <label for="pwd">password</label> -->
+        <input type="password" id="pwd" required placeholder="password">
+    </div>
+        <div>
+        <!-- <label for="mobno">mobile no</label> -->
+        <input type="number" id="mobno" placeholder="mobile no">
+    </div>
+        <div>
+        <!-- <label for="mail">email</label> -->
+        <input type="text" id="mail" placeholder="email">
+    </div>
+    <div>
+        <label for="num">DOB</label>
+        <input type="date" id="num">
+    </div>
+    <div>
+        <label for="male">male</label><input type="radio" id="male">
+        <label for="fem">female</label><input type="radio" id="fem">
+    </div>
+    <div>
+        <label for="frtend">frontend</label><input type="checkbox" id="frtend">
+        <label for="bkend">backend</label><input type="checkbox" id="bkend">
+        <label for="opc">optional courses</label><input type="checkbox" id="opc">
+    </div> 
+    <div>
+        <select>
+            <option>select timing</option>
+            <option>morning</option>
+            <option>evening</option>
+            <option>afternoon</option>
+        </select>
+    </div>
+    <div>
+        <input type="number" min="1" max="5" placeholder="rateus">
+    </div>
+    <div>
+        <label>upload resume</label><input type="file">
+    </div>
+    <div>
+        <label>feedback</label><textarea cols="30" rows="10"></textarea>
+    </div>
+    <input type="text" value="mca" required><!-- fixed value given to i/p,cannot be changed-->
+    <div>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </div>
+    </form>
+</body>
+</html>
